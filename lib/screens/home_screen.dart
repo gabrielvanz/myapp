@@ -94,15 +94,18 @@ class _HomeScreenState extends State<HomeScreen> {
                 itemCount: dataMostPopular.length,
                 itemBuilder: (context, index) {
                   final item = dataMostPopular[index];
-                  return PopularCard(
-                    product: item,
-                    onTap: () {
-                      Navigator.pushNamed(
-                        context,
-                        '/details',
-                        arguments: item,
-                      );
-                    },
+                  return Padding( // Wrap PopularCard with Padding
+                    padding: const EdgeInsets.symmetric(vertical: 3), // Adjust padding as needed
+                    child: PopularCard(
+                      product: item,
+                      onTap: () {
+                        Navigator.pushNamed(
+                          context,
+                          '/details',
+                          arguments: item,
+                        );
+                      },
+                    ),
                   );
                 },
               ),

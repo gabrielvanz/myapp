@@ -108,6 +108,7 @@ class CartScreen extends StatelessWidget {
                                       fontSize: 16,
                                       fontFamily: 'Source Sans Pro',
                                       fontWeight: FontWeight.w600,
+                                      color: Colors.white,
                                     ),
                                   ),
                                 ),
