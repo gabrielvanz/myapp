@@ -31,6 +31,7 @@ class MyApp extends StatelessWidget {
           textTheme: GoogleFonts.poppinsTextTheme(),
           colorScheme: ColorScheme.fromSeed(seedColor: Colors.blue),
         ),
+        debugShowCheckedModeBanner: false,
         routerConfig: appRouter,
       ),
     );
