@@ -5,11 +5,9 @@ import 'providers/cart_provider.dart';
 import 'providers/favorite_provider.dart';
 import 'providers/user_provider.dart';
 import 'routes/app_router.dart';
-import 'config/firebase_config.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  await FirebaseConfig.initializeFirebase();
   runApp(const MyApp());
 }
 
@@ -25,7 +23,7 @@ class MyApp extends StatelessWidget {
         ChangeNotifierProvider(create: (_) => UserProvider()),
       ],
       child: MaterialApp.router(
-        title: 'Challenge III Flutter',
+        title: 'G2 Flutter',
         theme: ThemeData(
           useMaterial3: true,
           textTheme: GoogleFonts.poppinsTextTheme(),
